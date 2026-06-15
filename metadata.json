@@ -1,0 +1,8 @@
+{
+  "name": "Kapruka AI Shopping Assistant",
+  "description": "An AI-powered e-commerce assistant integrated with the Kapruka live catalog via JSON-RPC 2.0 MCP server, supporting multilingual Sinhala/Tanglish translations, shopping cart state persistence, and checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
