@@ -404,28 +404,28 @@ Your checkout invoice of Rs. ${getSubtotal().toLocaleString()} is locked in. Cli
       <div className="flex-1 h-[55%] md:h-full flex flex-col bg-[#F3F4F6] overflow-hidden">
         
         {/* Navigation Tabs bar matching status Funnel milestones (with safe padding for address bar/notch) */}
-        <div className="bg-white border-b border-[#E5E7EB] px-4 py-3 pt-5 md:pt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shrink-0">
+        <div className="bg-[#0046be] border-b border-[#00389c] px-4 py-3 pt-6 md:pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shrink-0 sticky top-0 z-50 shadow-md">
           <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 -mb-1 max-w-full">
             <button
               id="tab-btn-catalog"
               onClick={() => setActiveTab("catalog")}
               className={`px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer uppercase tracking-wider ${
                 activeTab === "catalog"
-                  ? "bg-[#0046be] text-white"
-                  : "text-[#4B5563] hover:bg-[#F3F4F6]"
+                  ? "bg-white text-[#0046be] shadow-sm font-extrabold scale-102"
+                  : "text-blue-100 hover:text-white hover:bg-[#00389c]/75 bg-[#00389c]/40"
               }`}
             >
-              <Sparkles className="w-3.5 h-3.5" />
+              <Sparkles className="w-3.5 h-3.5 animate-pulse" />
               <span>Search Results</span>
             </button>
-
+ 
             <button
               id="tab-btn-cart"
               onClick={() => setActiveTab("cart")}
               className={`px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer relative uppercase tracking-wider ${
                 activeTab === "cart"
-                  ? "bg-[#0046be] text-white"
-                  : "text-[#4B5563] hover:bg-[#F3F4F6]"
+                  ? "bg-white text-[#0046be] shadow-sm font-extrabold scale-102"
+                  : "text-blue-100 hover:text-white hover:bg-[#00389c]/75 bg-[#00389c]/40"
               }`}
             >
               <ShoppingCart className="w-3.5 h-3.5" />
@@ -436,27 +436,27 @@ Your checkout invoice of Rs. ${getSubtotal().toLocaleString()} is locked in. Cli
                 </span>
               )}
             </button>
-
+ 
             <button
               id="tab-btn-delivery"
               onClick={() => setActiveTab("delivery")}
               className={`px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer uppercase tracking-wider ${
                 activeTab === "delivery"
-                  ? "bg-[#0046be] text-white"
-                  : "text-[#4B5563] hover:bg-[#F3F4F6]"
+                  ? "bg-white text-[#0046be] shadow-sm font-extrabold scale-102"
+                  : "text-blue-100 hover:text-white hover:bg-[#00389c]/75 bg-[#00389c]/40"
               }`}
             >
               <MapPin className="w-3.5 h-3.5" />
               <span>Delivery Details</span>
             </button>
-
+ 
             <button
               id="tab-btn-checkout"
               onClick={() => setActiveTab("checkout")}
               className={`px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer uppercase tracking-wider ${
                 activeTab === "checkout"
-                  ? "bg-[#0046be] text-white"
-                  : "text-[#4B5563] hover:bg-[#F3F4F6]"
+                  ? "bg-white text-[#0046be] shadow-sm font-extrabold scale-102"
+                  : "text-blue-100 hover:text-white hover:bg-[#00389c]/75 bg-[#00389c]/40"
               }`}
               disabled={cartItems.length === 0}
             >
@@ -464,10 +464,10 @@ Your checkout invoice of Rs. ${getSubtotal().toLocaleString()} is locked in. Cli
               <span>Checkout Pay</span>
             </button>
           </div>
-
-          <div className="flex items-center gap-1">
-            <Award className="w-4 h-4 text-[#f5a623]" />
-            <span className="text-[11px] font-mono font-semibold text-[#4B5563] uppercase tracking-widest">
+ 
+          <div className="flex items-center gap-1.5">
+            <Award className="w-4 h-4 text-[#f5a623] animate-pulse" />
+            <span className="text-[11px] font-mono font-bold text-blue-100 uppercase tracking-widest">
               LKR Standard Currency
             </span>
           </div>
